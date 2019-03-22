@@ -1,0 +1,396 @@
+{
+	"id": "1a4eac5f-0510-4147-a4cf-51a4697c2bba",
+	"name": "Api Testing",
+	"allTests": [],
+	"timestamp": "2019-03-22T05:33:51.591Z",
+	"collection_id": "e1b55aff-3f41-40d6-905a-0ac3c0f0b85c",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "e1b55aff-3f41-40d6-905a-0ac3c0f0b85c",
+		"name": "Api Testing",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"63e1ac9f-74ac-4a13-97c8-33064cdd9d4d",
+			"cd6c560c-4b8c-4110-a0ef-ee742ff76b0c",
+			"fb97d7b5-2627-4ade-8d16-7a7759797bfc",
+			"090545b9-9c7b-417c-a858-264af9360847",
+			"cb05afda-81c2-4867-87c3-1862dc85c797",
+			"c8ae12a3-18f4-433d-a6ec-661db1dd3741",
+			"65dc2e4b-801c-45f6-a2ed-a6ec153b8765",
+			"f3c7d7d7-2264-4125-96d1-7f36fa971847"
+		],
+		"folders_order": [],
+		"owner": "6823468",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Question1student data get",
+			"id": "63e1ac9f-74ac-4a13-97c8-33064cdd9d4d",
+			"url": "http://localhost:8080/student/list",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"55"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "55",
+			"totalRequestTime": "55",
+			"iterationResults": {}
+		},
+		{
+			"name": "Question2 student data post",
+			"id": "cd6c560c-4b8c-4110-a0ef-ee742ff76b0c",
+			"url": "http://localhost:8080/student",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"11"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "11",
+			"totalRequestTime": "11",
+			"iterationResults": {}
+		},
+		{
+			"name": "Question2 view student details",
+			"id": "fb97d7b5-2627-4ade-8d16-7a7759797bfc",
+			"url": "http://localhost:8080/student/101",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"8"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "8",
+			"totalRequestTime": "8",
+			"iterationResults": {}
+		},
+		{
+			"name": "Question3 fetching data programme financial analysis",
+			"id": "090545b9-9c7b-417c-a858-264af9360847",
+			"url": "http://localhost:8080/student/list?programme=Financial%20Analysis",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"13"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "13",
+			"totalRequestTime": "13",
+			"iterationResults": {}
+		},
+		{
+			"name": "Qusetion 4 post data with existing email",
+			"id": "cb05afda-81c2-4867-87c3-1862dc85c797",
+			"url": "http://localhost:8080/student",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "for existing email id",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"for existing email id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"21"
+			],
+			"allTests": [
+				{
+					"for existing email id": true
+				}
+			],
+			"time": "21",
+			"totalRequestTime": "21",
+			"iterationResults": {}
+		},
+		{
+			"name": "Question 5 post data with incorrect email",
+			"id": "c8ae12a3-18f4-433d-a6ec-661db1dd3741",
+			"url": "http://localhost:8080/student",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Invalid Email",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Invalid Email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"12"
+			],
+			"allTests": [
+				{
+					"Invalid Email": true
+				}
+			],
+			"time": "12",
+			"totalRequestTime": "12",
+			"iterationResults": {}
+		},
+		{
+			"name": "Question 6 fetch data by programme Computer Science",
+			"id": "65dc2e4b-801c-45f6-a2ed-a6ec153b8765",
+			"url": "http://localhost:8080/student/list?programme=Computer%20Science",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"25"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "25",
+			"totalRequestTime": "25",
+			"iterationResults": {}
+		},
+		{
+			"name": "Question 6 fetch by programme criminology",
+			"id": "f3c7d7d7-2264-4125-96d1-7f36fa971847",
+			"url": "http://localhost:8080/student/list?programme=Criminology",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"15"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "15",
+			"totalRequestTime": "15",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 2,
+	"totalFail": 0,
+	"totalTime": 160,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Question1student data get",
+			"id": "63e1ac9f-74ac-4a13-97c8-33064cdd9d4d",
+			"url": "http://localhost:8080/student/list",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Question2 student data post",
+			"id": "cd6c560c-4b8c-4110-a0ef-ee742ff76b0c",
+			"url": "http://localhost:8080/student",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Question2 view student details",
+			"id": "fb97d7b5-2627-4ade-8d16-7a7759797bfc",
+			"url": "http://localhost:8080/student/101",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Question3 fetching data programme financial analysis",
+			"id": "090545b9-9c7b-417c-a858-264af9360847",
+			"url": "http://localhost:8080/student/list?programme=Financial%20Analysis",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Qusetion 4 post data with existing email",
+			"id": "cb05afda-81c2-4867-87c3-1862dc85c797",
+			"url": "http://localhost:8080/student",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"for existing email id": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Question 5 post data with incorrect email",
+			"id": "c8ae12a3-18f4-433d-a6ec-661db1dd3741",
+			"url": "http://localhost:8080/student",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Invalid Email": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Question 6 fetch data by programme Computer Science",
+			"id": "65dc2e4b-801c-45f6-a2ed-a6ec153b8765",
+			"url": "http://localhost:8080/student/list?programme=Computer%20Science",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Question 6 fetch by programme criminology",
+			"id": "f3c7d7d7-2264-4125-96d1-7f36fa971847",
+			"url": "http://localhost:8080/student/list?programme=Criminology",
+			"time": "2019-03-22T05:33:51.591Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
